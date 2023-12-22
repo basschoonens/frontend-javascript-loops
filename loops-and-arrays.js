@@ -3,18 +3,19 @@
 // Schrijf een script dat iedere naam in onderstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
-
-const names = ["Henk", "Piet", "Fred", "Joop"];
-
-// Verwachtte uitkomsten:
-// Vóór het script zie je de originele waardes:
-// console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
-// Na jouw script zie je de aangepaste waardes:
-// console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
-
-
-
-
+//
+// const names = ["Henk", "Piet", "Fred", "Joop"];
+//
+// // Verwachtte uitkomsten:
+// // Vóór het script zie je de originele waardes:
+// // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
+// // Na jouw script zie je de aangepaste waardes:
+// // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
+//
+// console.log(names)
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]+"je")
+// }
 
 // ==========================================
 // Opdracht 2
@@ -31,8 +32,14 @@ const numbers = [2, 4, 5, 29, 38];
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
 
 
-
-
+for (let i = 0; i < numbers.length; i++) {
+    // console.log(numbers[i])
+    if(numbers[i] % 2 === 0) {
+        console.log(numbers[i] * 2);
+    } else if (numbers[i] % 2){
+        console.log(numbers[i] * 3);
+    }
+}
 
 // ==========================================
 // Opdracht 3
@@ -56,6 +63,10 @@ const squares = [30, 2, 8, 24, 11];
 //   'Het volume van 24 is 13824',
 //   'Het volume van 11 is 1331'
 // ]
+
+for (let i = 0; i < squares.length; i++) {
+
+}
 
 
 
